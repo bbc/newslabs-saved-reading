@@ -41,23 +41,73 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Newsnight Companion</h1>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="#" class="list-group-item"><span class="badge">14</span>Leadership Debate</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#" class="list-group-item"><span class="badge">3</span>Corbyn Mania</a>
-            </li>
-          <li class="list-group-item">
-            <a href="#" class="list-group-item"><span class="badge">7</span>Calais</a>
-            </li>
-        </ul>
 
-        <p>
-          <a class="btn btn-lg btn-primary" href="/newsnight/debate/index_2.html" role="button">Let's go &raquo;</a>
-        </p>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Labour Leadership Debate
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="timecode">02:48</span> More About: Yvette Cooper
+                </li>
+                <li class="list-group-item">
+                  <span class="timecode">03:01</span> More About: Liz Kendall
+                </li>
+                <li class="list-group-item">
+                  <span class="timecode">09:10</span> Tony Blair's Legacy
+                </li>
+                <li class="list-group-item">
+                  <span class="timecode">09:30</span> Labour's Changing Image
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Corbyn Mania
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="timecode">00:30</span> Background: Jeremy Corbyn
+                </li>
+                <li class="list-group-item">
+                  <span class="timecode">03:01</span> Analysis: Favourite Books
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Calais Migrant Camp
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="timecode">00:30</span> Calais Camp: Origins
+                </li>
+                <li class="list-group-item">
+                  <span class="timecode">03:01</span> In Numbers: Where Migrants From
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div> <!-- /container -->
 
 
