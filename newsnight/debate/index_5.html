@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/navbar-fixed-top.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/newsnight">Newsnight</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/newsnight/debate">Debate</a></li>
+            <li><a href="/newsnight/corbyn">Corbyn</a></li>
+            <li><a href="/newsnight/calais">Calais</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+      <div id="saved" style="display: none;" class="alert alert-success" role="alert"><strong>Saved!</strong> Find everything you saved in <a href="#" class="alert-link">your list</a> for you to peruse at your leisure after the show.
+      </div>
+      
+        <a href="#" class="save4later" data-id="andy-burnham" data-url="http://news-linked-data.cloud.bbc.co.uk/bbc/thing/ed945a76-33df-4daf-badb-021c664b803d">
+        <h1>Jeremy Corbyn</h1>
+        <ul>
+          <li><h4>almost always voted against Labour's anti-terrorism laws</h4></li>
+          <li><h4>almost always voted against a stricter asylum system</h4></li>
+          <li><h4>consistently voted against use of UK military forces in combat operations overseas</h4></li>
+        </ul>
+        </a>
+        <p>
+        </p>
+        <hr/>
+        <p>
+          <a class="btn btn-lg btn-default" href="/newsnight/debate/index_4.html" role="button">back &laquo;</a>
+          <a class="btn btn-lg btn-primary" href="/newsnight/debate/index_6.html" role="button">forward &raquo;</a>
+        </p>
+      </div>
+
+    </div> <!-- /container-fluid -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+$(function() {
+  $("#saved").hide();
+
+  $(".save4later").on("click", function() {
+    console.log("clicked");
+    $(this).preventDefault;
+    $("#saved").animate({
+      opacity: "show"
+    }, "slow", "linear");
+  });
+});
+
+    </script>
+
+  </body>
+</html>
