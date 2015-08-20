@@ -3484,6 +3484,18 @@ fieldset[disabled] .btn-link:focus {
   color: #777;
   text-decoration: none;
 }
+.btn-xxl,
+.btn-group-xxl > .btn {
+    padding: 26px 40px;
+    font-size: 26px;
+    border-radius: 10px;
+}
+.btn-xl,
+.btn-group-xl > .btn {
+    padding: 18px 28px;
+    font-size: 22px;
+    border-radius: 8px;
+}
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10px 16px;
